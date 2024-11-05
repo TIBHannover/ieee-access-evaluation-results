@@ -1,26 +1,31 @@
 #Execute this SPARQL query  against the following OnDeT SPARQL endpoint: http://ols4ing21.service.tib.eu:3030/#/dataset/test/query
-#Competency question CQ 1.2: What is the total number of all changes in a given time span?
+#Competency question CQ 2.1: What axioms were added to the ontology within a specified time span?
 PREFIX pro: <http://purl.org/hpi/patchr#>
 PREFIX pr: <http://purl.org/ontology/prv/core#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-SELECT (COUNT(?diff) AS ?count)
+SELECT DISTINCT ?s ?p ?o
 WHERE {
 ?first_commit prov:wasRevisionOf ?second_commit .
 ?first_commit prov:generatedAtTime ?first_commit_time .
-?second_commit prov:generatedAtTime ?second_commit_time .
 ?first_commit prov:value ?first_commit_title .
-?operation prov:addRelationship ?first_commit .
-?operation prov:atLocation ?location .
-?location prov:dm ?diff .
+?second_commit prov:generatedAtTime ?second_commit_time .
 ?first_commit prov:alternateOf ?alternate_of_first_commit .
-?alternate_of_first_commit rdfs:seeAlso ?ontology_raw_file_url .
-FILTER(str(?ontology_raw_file_url) = 'https://raw.githubusercontent.com/nenadkrdzavac/iao-ontology/dev/src/ontology/imports/iao-extracted-swj.owl')
+?alternate_of_first_commit rdfs:seeAlso
+<https://raw.githubusercontent.com/nenadkrdzavac/iao-
+ontology/dev/src/ontology/imports/iao-extracted-swj.owl> .
+?first_commit prov:value ?first_commit_title .
+?first_commit_operation ?pp ?first_commit .
+?pp rdfs:subPropertyOf ?property .
+?first_commit_operation prov:atLocation ?location .
+?location prov:dm ?diff .
 GRAPH ?diff {
 ?s ?p ?o .
 }
 FILTER(str(?first_commit_time) >"2023-09-02T09:10:32Z" &&
 str(?second_commit_time) < "2024-10-30T12:00:46Z") .
+FILTER(CONTAINS(str(?pp),"add")).
+}
 }
