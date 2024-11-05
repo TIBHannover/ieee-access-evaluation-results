@@ -1,4 +1,5 @@
 #Execute this SPARQL query  against the following OnDeT SPARQL endpoint: http://ols4ing21.service.tib.eu:3030/#/dataset/test/query
+#Competency question CQ 0.1: Can we get all different types of differences and related commits that are revisions of some other commit?
 PREFIX pro: <http://purl.org/hpi/patchr#>
 PREFIX pr: <http://purl.org/ontology/prv/core#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
