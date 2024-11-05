@@ -1,0 +1,23 @@
+#Execute this SPARQL query  against the following OnDeT SPARQL endpoint: http://ols4ing21.service.tib.eu:3030/#/dataset/test/query
+#Competency question CQ 0.6: Can we get all information about addition new relationship in the latest commit?
+PREFIX pro: <http://purl.org/hpi/patchr#>
+PREFIX pr: <http://purl.org/ontology/prv/core#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT *
+WHERE {
+?first_commit prov:wasRevisionOf ?second_commit .
+?first_commit prov:generatedAtTime ?first_commit_time .
+?first_commit prov:value ?first_commit_title .
+?operation prov:addRelationship ?first_commit .
+?operation prov:atLocation ?location .
+?location prov:dm ?diff .
+?first_commit prov:alternateOf ?alternate_of_first_commit .
+?alternate_of_first_commit rdfs:seeAlso ?ontology_raw_file_url .
+FILTER(str(?ontology_raw_file_url) = 'https://raw.githubusercontent.com/nenadkrdzavac/iao-ontology/dev/src/ontology/imports/iao-extracted-swj.owl')
+GRAPH ?diff {
+?s ?p ?o .
+}
+} ORDER BY DESC(?first_commit_time) LIMIT 1
