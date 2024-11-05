@@ -1,0 +1,325 @@
+@prefix : <http://doi.org/10.1610/history-iao-extracted#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://doi.org/10.1610/history-iao-extracted> .
+
+<http://doi.org/10.1610/history-iao-extracted> rdf:type owl:Ontology ;
+                                                owl:imports <https://raw.githubusercontent.com/nenadkrdzavac/prov-o/main/prov-o.ttl#> ;
+                                                owl:versionInfo "Created with TopBraid Composer" .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://doi.org/10.1610/history-iao-extracted#OpenEnergyPlatform_ontology_master_src_ontology_imports_iao-extracted
+:OpenEnergyPlatform_ontology_master_src_ontology_imports_iao-extracted rdf:type owl:NamedIndividual ,
+                                                                                prov:Entity ;
+                                                                       rdfs:label "OpenEnergyPlatform_ontology_master_src_ontology_imports_iao-extracted" ;
+                                                                       rdfs:seeAlso <https://raw.githubusercontent.com/OpenEnergyPlatform/ontology/master/src/ontology/imports/iao-extracted.owl> .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#b5d01533c01307b2b83bcfaaf1c861f3_addC
+:b5d01533c01307b2b83bcfaaf1c861f3_addC rdf:type owl:NamedIndividual ,
+                                                prov:Activity ;
+                                       prov:addConcept <http://doi.org/10.1610/history-iao-extracted#9d784dbb4810548940b76aff4a8790d6ad379bf6> ;
+                                       prov:atLocation :b5d01533c01307b2b83bcfaaf1c861f3_addC_location ;
+                                       prov:wasAssociatedWith :contodiff ;
+                                       rdfs:label "b5d01533c01307b2b83bcfaaf1c861f3_addC" .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#b5d01533c01307b2b83bcfaaf1c861f3_addC_location
+:b5d01533c01307b2b83bcfaaf1c861f3_addC_location rdf:type owl:NamedIndividual ,
+                                                         prov:Location ;
+                                                rdfs:label "b5d01533c01307b2b83bcfaaf1c861f3_addC_location" ;
+                                                prov:dm <http://doi.org/10.1610/b5d01533c01307b2b83bcfaaf1c861f3_addC> .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#baf44bb10344d53ba7b5609d07f70a68_addR
+:baf44bb10344d53ba7b5609d07f70a68_addR rdf:type owl:NamedIndividual ,
+                                                prov:Activity ;
+                                       prov:addRelationship <http://doi.org/10.1610/history-iao-extracted#9d784dbb4810548940b76aff4a8790d6ad379bf6> ;
+                                       prov:atLocation :baf44bb10344d53ba7b5609d07f70a68_addR_location ;
+                                       prov:wasAssociatedWith :contodiff ;
+                                       rdfs:label "baf44bb10344d53ba7b5609d07f70a68_addR" .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#baf44bb10344d53ba7b5609d07f70a68_addR_location
+:baf44bb10344d53ba7b5609d07f70a68_addR_location rdf:type owl:NamedIndividual ,
+                                                         prov:Location ;
+                                                rdfs:label "baf44bb10344d53ba7b5609d07f70a68_addR_location" ;
+                                                prov:dm <http://doi.org/10.1610/baf44bb10344d53ba7b5609d07f70a68_addR> .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#bc9a6ab5277b39808a3949e2fa5211fb_addC
+:bc9a6ab5277b39808a3949e2fa5211fb_addC rdf:type owl:NamedIndividual ,
+                                                prov:Activity ;
+                                       prov:addConcept <http://doi.org/10.1610/history-iao-extracted#9d784dbb4810548940b76aff4a8790d6ad379bf6> ;
+                                       prov:atLocation :bc9a6ab5277b39808a3949e2fa5211fb_addC_location ;
+                                       prov:wasAssociatedWith :contodiff .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#bc9a6ab5277b39808a3949e2fa5211fb_addC_location
+:bc9a6ab5277b39808a3949e2fa5211fb_addC_location rdf:type owl:NamedIndividual ,
+                                                         prov:Location ;
+                                                rdfs:label "bc9a6ab5277b39808a3949e2fa5211fb_addC_location" ;
+                                                prov:dm <http://doi.org/10.1610/bc9a6ab5277b39808a3949e2fa5211fb_addC> .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#c8360d17dc4d46170dfb1d3ae07a7c88_addR
+:c8360d17dc4d46170dfb1d3ae07a7c88_addR rdf:type owl:NamedIndividual ,
+                                                prov:Activity ;
+                                       prov:addRelationship <http://doi.org/10.1610/history-iao-extracted#9d784dbb4810548940b76aff4a8790d6ad379bf6> ;
+                                       prov:atLocation :c8360d17dc4d46170dfb1d3ae07a7c88_addR_location ;
+                                       prov:wasAssociatedWith :contodiff ;
+                                       rdfs:label "c8360d17dc4d46170dfb1d3ae07a7c88_addR" .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#c8360d17dc4d46170dfb1d3ae07a7c88_addR_location
+:c8360d17dc4d46170dfb1d3ae07a7c88_addR_location rdf:type owl:NamedIndividual ,
+                                                         prov:Location ;
+                                                rdfs:label "c8360d17dc4d46170dfb1d3ae07a7c88_addR_location" ;
+                                                prov:dm <http://doi.org/10.1610/c8360d17dc4d46170dfb1d3ae07a7c88_addR> .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#cb1f009aaac0439427afeedb2409474a_delC
+:cb1f009aaac0439427afeedb2409474a_delC rdf:type owl:NamedIndividual ,
+                                                prov:Activity ;
+                                       prov:atLocation :cb1f009aaac0439427afeedb2409474a_delC_location ;
+                                       prov:delConcept <http://doi.org/10.1610/history-iao-extracted#9d784dbb4810548940b76aff4a8790d6ad379bf6> ;
+                                       prov:wasAssociatedWith :contodiff ;
+                                       rdfs:label "cb1f009aaac0439427afeedb2409474a_delC" .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#cb1f009aaac0439427afeedb2409474a_delC_location
+:cb1f009aaac0439427afeedb2409474a_delC_location rdf:type owl:NamedIndividual ,
+                                                         prov:Location ;
+                                                rdfs:label "cb1f009aaac0439427afeedb2409474a_delC_location" ;
+                                                prov:dm <http://doi.org/10.1610/cb1f009aaac0439427afeedb2409474a_delC> .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#contodiff
+:contodiff rdf:type owl:NamedIndividual ,
+                    prov:SoftwareAgent ;
+           rdfs:comment "contodiff" ;
+           prov:dm <https://github.com/dbs-leipzig/conto_diff> .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#d1c705b2acdeb161d90481ab59cadb15_addR
+:d1c705b2acdeb161d90481ab59cadb15_addR rdf:type owl:NamedIndividual ,
+                                                prov:Activity ;
+                                       prov:addRelationship <http://doi.org/10.1610/history-iao-extracted#9d784dbb4810548940b76aff4a8790d6ad379bf6> ;
+                                       prov:atLocation :d1c705b2acdeb161d90481ab59cadb15_addR_location ;
+                                       prov:wasAssociatedWith :contodiff ;
+                                       rdfs:label "d1c705b2acdeb161d90481ab59cadb15_addR" .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#d1c705b2acdeb161d90481ab59cadb15_addR_location
+:d1c705b2acdeb161d90481ab59cadb15_addR_location rdf:type owl:NamedIndividual ,
+                                                         prov:Location ;
+                                                rdfs:label "d1c705b2acdeb161d90481ab59cadb15_addR_location" ;
+                                                prov:dm <http://doi.org/10.1610/d1c705b2acdeb161d90481ab59cadb15_addR> .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#f1163c796cbd8231eb500fed0e2c3d56_addInner
+:f1163c796cbd8231eb500fed0e2c3d56_addInner rdf:type owl:NamedIndividual ,
+                                                    prov:Activity ;
+                                           prov:addInner <http://doi.org/10.1610/history-iao-extracted#9d784dbb4810548940b76aff4a8790d6ad379bf6> ;
+                                           prov:atLocation :f1163c796cbd8231eb500fed0e2c3d56_addInner_location ;
+                                           prov:wasAssociatedWith :contodiff ;
+                                           rdfs:label "f1163c796cbd8231eb500fed0e2c3d56_addInner" .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#f1163c796cbd8231eb500fed0e2c3d56_addInner_location
+:f1163c796cbd8231eb500fed0e2c3d56_addInner_location rdf:type owl:NamedIndividual ,
+                                                             prov:Location ;
+                                                    rdfs:label "f1163c796cbd8231eb500fed0e2c3d56_addInner_location" ;
+                                                    prov:dm <http://doi.org/10.1610/f1163c796cbd8231eb500fed0e2c3d56_addInner> .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#0f0b5ac4ccb44e3bed3a6c799c8f8de8_delC
+<http://doi.org/10.1610/history-iao-extracted#0f0b5ac4ccb44e3bed3a6c799c8f8de8_delC> rdf:type owl:NamedIndividual ,
+                                                                                              prov:Activity ;
+                                                                                     prov:atLocation <http://doi.org/10.1610/history-iao-extracted#0f0b5ac4ccb44e3bed3a6c799c8f8de8_delC_location> ;
+                                                                                     prov:delConcept <http://doi.org/10.1610/history-iao-extracted#9d784dbb4810548940b76aff4a8790d6ad379bf6> ;
+                                                                                     prov:wasAssociatedWith :contodiff ;
+                                                                                     rdfs:label "0f0b5ac4ccb44e3bed3a6c799c8f8de8_delC" .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#0f0b5ac4ccb44e3bed3a6c799c8f8de8_delC_location
+<http://doi.org/10.1610/history-iao-extracted#0f0b5ac4ccb44e3bed3a6c799c8f8de8_delC_location> rdf:type owl:NamedIndividual ,
+                                                                                                       prov:Location ;
+                                                                                              rdfs:label "0f0b5ac4ccb44e3bed3a6c799c8f8de8_delC_location" ;
+                                                                                              prov:dm <http://doi.org/10.1610/0f0b5ac4ccb44e3bed3a6c799c8f8de8_delC> .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#02fff32ff595f45078bf3397216fe2a0_delR
+<http://doi.org/10.1610/history-iao-extracted#02fff32ff595f45078bf3397216fe2a0_delR> rdf:type owl:NamedIndividual ,
+                                                                                              prov:Activity ;
+                                                                                     prov:atLocation <http://doi.org/10.1610/history-iao-extracted#02fff32ff595f45078bf3397216fe2a0_delR_location> ;
+                                                                                     prov:delRelationship <http://doi.org/10.1610/history-iao-extracted#9d784dbb4810548940b76aff4a8790d6ad379bf6> ;
+                                                                                     prov:wasAssociatedWith :contodiff ;
+                                                                                     rdfs:label "02fff32ff595f45078bf3397216fe2a0_delR" .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#02fff32ff595f45078bf3397216fe2a0_delR_location
+<http://doi.org/10.1610/history-iao-extracted#02fff32ff595f45078bf3397216fe2a0_delR_location> rdf:type owl:NamedIndividual ,
+                                                                                                       prov:Location ;
+                                                                                              rdfs:label "02fff32ff595f45078bf3397216fe2a0_delR_location" ;
+                                                                                              prov:dm <http://doi.org/10.1610/02fff32ff595f45078bf3397216fe2a0_delR> .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#187f96c63b028c6a8b9ad3ea84befd39_delLeaf
+<http://doi.org/10.1610/history-iao-extracted#187f96c63b028c6a8b9ad3ea84befd39_delLeaf> rdf:type owl:NamedIndividual ,
+                                                                                                 prov:Activity ;
+                                                                                        prov:atLocation <http://doi.org/10.1610/history-iao-extracted#187f96c63b028c6a8b9ad3ea84befd39_delLeaf_location> ;
+                                                                                        prov:delLeaf <http://doi.org/10.1610/history-iao-extracted#9d784dbb4810548940b76aff4a8790d6ad379bf6> ;
+                                                                                        prov:wasAssociatedWith :contodiff ;
+                                                                                        rdfs:label "187f96c63b028c6a8b9ad3ea84befd39_delLeaf" .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#187f96c63b028c6a8b9ad3ea84befd39_delLeaf_location
+<http://doi.org/10.1610/history-iao-extracted#187f96c63b028c6a8b9ad3ea84befd39_delLeaf_location> rdf:type owl:NamedIndividual ,
+                                                                                                          prov:Location ;
+                                                                                                 rdfs:label "187f96c63b028c6a8b9ad3ea84befd39_delLeaf_location" ;
+                                                                                                 prov:dm <http://doi.org/10.1610/187f96c63b028c6a8b9ad3ea84befd39_delLeaf> .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#3cf97021f14c97ddb7799edd1022f858_delR
+<http://doi.org/10.1610/history-iao-extracted#3cf97021f14c97ddb7799edd1022f858_delR> rdf:type owl:NamedIndividual ,
+                                                                                              prov:Activity ;
+                                                                                     prov:atLocation <http://doi.org/10.1610/history-iao-extracted#3cf97021f14c97ddb7799edd1022f858_delR_location> ;
+                                                                                     prov:delRelationship <http://doi.org/10.1610/history-iao-extracted#9d784dbb4810548940b76aff4a8790d6ad379bf6> ;
+                                                                                     prov:wasAssociatedWith :contodiff ;
+                                                                                     rdfs:label "3cf97021f14c97ddb7799edd1022f858_delR" .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#3cf97021f14c97ddb7799edd1022f858_delR_location
+<http://doi.org/10.1610/history-iao-extracted#3cf97021f14c97ddb7799edd1022f858_delR_location> rdf:type owl:NamedIndividual ,
+                                                                                                       prov:Location ;
+                                                                                              rdfs:label "3cf97021f14c97ddb7799edd1022f858_delR_location" ;
+                                                                                              prov:dm <http://doi.org/10.1610/3cf97021f14c97ddb7799edd1022f858_delR> .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#3e6226841c0fae0da98212eb43d70166_delR
+<http://doi.org/10.1610/history-iao-extracted#3e6226841c0fae0da98212eb43d70166_delR> rdf:type owl:NamedIndividual ,
+                                                                                              prov:Activity ;
+                                                                                     prov:atLocation <http://doi.org/10.1610/history-iao-extracted#3e6226841c0fae0da98212eb43d70166_delR_location> ;
+                                                                                     prov:delRelationship <http://doi.org/10.1610/history-iao-extracted#9d784dbb4810548940b76aff4a8790d6ad379bf6> ;
+                                                                                     prov:wasAssociatedWith :contodiff ;
+                                                                                     rdfs:label "3e6226841c0fae0da98212eb43d70166_delR" .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#3e6226841c0fae0da98212eb43d70166_delR_location
+<http://doi.org/10.1610/history-iao-extracted#3e6226841c0fae0da98212eb43d70166_delR_location> rdf:type owl:NamedIndividual ,
+                                                                                                       prov:Location ;
+                                                                                              rdfs:label "3e6226841c0fae0da98212eb43d70166_delR_location" ;
+                                                                                              prov:dm <http://doi.org/10.1610/3e6226841c0fae0da98212eb43d70166_delR> .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#30616e57b2e17414c94c7a0cff4cf1ca_delInner
+<http://doi.org/10.1610/history-iao-extracted#30616e57b2e17414c94c7a0cff4cf1ca_delInner> rdf:type owl:NamedIndividual ,
+                                                                                                  prov:Activity ;
+                                                                                         prov:atLocation <http://doi.org/10.1610/history-iao-extracted#30616e57b2e17414c94c7a0cff4cf1ca_delInner_location> ;
+                                                                                         prov:delInner <http://doi.org/10.1610/history-iao-extracted#9d784dbb4810548940b76aff4a8790d6ad379bf6> ;
+                                                                                         prov:wasAssociatedWith :contodiff ;
+                                                                                         rdfs:label "30616e57b2e17414c94c7a0cff4cf1ca_delInner" .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#30616e57b2e17414c94c7a0cff4cf1ca_delInner_location
+<http://doi.org/10.1610/history-iao-extracted#30616e57b2e17414c94c7a0cff4cf1ca_delInner_location> rdf:type owl:NamedIndividual ,
+                                                                                                           prov:Location ;
+                                                                                                  rdfs:label "30616e57b2e17414c94c7a0cff4cf1ca_delInner_location" ;
+                                                                                                  prov:dm <http://doi.org/10.1610/30616e57b2e17414c94c7a0cff4cf1ca_delInner> .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#40d53df9e5dfff7e4b5732ac79abec69_addR
+<http://doi.org/10.1610/history-iao-extracted#40d53df9e5dfff7e4b5732ac79abec69_addR> rdf:type owl:NamedIndividual ,
+                                                                                              prov:Activity ;
+                                                                                     prov:atLocation <http://doi.org/10.1610/history-iao-extracted#40d53df9e5dfff7e4b5732ac79abec69_addR_location> ;
+                                                                                     prov:wasAssociatedWith :contodiff .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#40d53df9e5dfff7e4b5732ac79abec69_addR_location
+<http://doi.org/10.1610/history-iao-extracted#40d53df9e5dfff7e4b5732ac79abec69_addR_location> rdf:type owl:NamedIndividual ,
+                                                                                                       prov:Location ;
+                                                                                              rdfs:label "40d53df9e5dfff7e4b5732ac79abec69_addR_location" ;
+                                                                                              prov:dm <http://doi.org/10.1610/40d53df9e5dfff7e4b5732ac79abec69_addR> .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#42c6448efab195d6e354b00ca0db71fa8910c0a8
+<http://doi.org/10.1610/history-iao-extracted#42c6448efab195d6e354b00ca0db71fa8910c0a8> rdf:type owl:NamedIndividual ,
+                                                                                                 prov:Entity ;
+                                                                                        prov:alternateOf :OpenEnergyPlatform_ontology_master_src_ontology_imports_iao-extracted ;
+                                                                                        prov:hadPrimarySource <http://doi.org/10.1610/history-iao-extracted#42c6448efab195d6e354b00ca0db71fa8910c0a8_iao-extracted> ;
+                                                                                        prov:generatedAtTime "2023-11-27T16:11:51.000Z"^^xsd:dateTime ;
+                                                                                        prov:value "add further terms to iao-extracted based on #1700" ;
+                                                                                        rdfs:comment "add further terms to iao-extracted based on #1700" ;
+                                                                                        rdfs:label "42c6448efab195d6e354b00ca0db71fa8910c0a8" ;
+                                                                                        prov:dm <https://github.com/OpenEnergyPlatform/ontology/commit/42c6448efab195d6e354b00ca0db71fa8910c0a8> .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#42c6448efab195d6e354b00ca0db71fa8910c0a8_iao-extracted
+<http://doi.org/10.1610/history-iao-extracted#42c6448efab195d6e354b00ca0db71fa8910c0a8_iao-extracted> rdf:type owl:NamedIndividual ,
+                                                                                                               prov:Entity ;
+                                                                                                      rdfs:label "42c6448efab195d6e354b00ca0db71fa8910c0a8_iao-extracted" ;
+                                                                                                      prov:dm <https://raw.githubusercontent.com/OpenEnergyPlatform/ontology/42c6448efab195d6e354b00ca0db71fa8910c0a8/src/ontology/imports/iao-extracted.owl> .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#6833f1946ed5a534e3bb33fe01b0bc0d_move
+<http://doi.org/10.1610/history-iao-extracted#6833f1946ed5a534e3bb33fe01b0bc0d_move> rdf:type owl:NamedIndividual ,
+                                                                                              prov:Activity ;
+                                                                                     prov:atLocation <http://doi.org/10.1610/history-iao-extracted#6833f1946ed5a534e3bb33fe01b0bc0d_move_location> ;
+                                                                                     prov:move <http://doi.org/10.1610/history-iao-extracted#9d784dbb4810548940b76aff4a8790d6ad379bf6> ;
+                                                                                     prov:wasAssociatedWith :contodiff ;
+                                                                                     rdfs:label "6833f1946ed5a534e3bb33fe01b0bc0d_move" .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#6833f1946ed5a534e3bb33fe01b0bc0d_move_location
+<http://doi.org/10.1610/history-iao-extracted#6833f1946ed5a534e3bb33fe01b0bc0d_move_location> rdf:type owl:NamedIndividual ,
+                                                                                                       prov:Location ;
+                                                                                              rdfs:label "6833f1946ed5a534e3bb33fe01b0bc0d_move_location" ;
+                                                                                              prov:dm <http://doi.org/10.1610/6833f1946ed5a534e3bb33fe01b0bc0d_move> .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#683564db518215476bdbc6c7ae8c2e93_addLeaf
+<http://doi.org/10.1610/history-iao-extracted#683564db518215476bdbc6c7ae8c2e93_addLeaf> rdf:type owl:NamedIndividual ,
+                                                                                                 prov:Activity ;
+                                                                                        prov:addLeaf <http://doi.org/10.1610/history-iao-extracted#9d784dbb4810548940b76aff4a8790d6ad379bf6> ;
+                                                                                        prov:atLocation <http://doi.org/10.1610/history-iao-extracted#683564db518215476bdbc6c7ae8c2e93_addLeaf_location> ;
+                                                                                        prov:wasAssociatedWith :contodiff ;
+                                                                                        rdfs:label "683564db518215476bdbc6c7ae8c2e93_addLeaf" .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#683564db518215476bdbc6c7ae8c2e93_addLeaf_location
+<http://doi.org/10.1610/history-iao-extracted#683564db518215476bdbc6c7ae8c2e93_addLeaf_location> rdf:type owl:NamedIndividual ,
+                                                                                                          prov:Location ;
+                                                                                                 rdfs:label "683564db518215476bdbc6c7ae8c2e93_addLeaf_location" ;
+                                                                                                 prov:dm <http://doi.org/10.1610/683564db518215476bdbc6c7ae8c2e93_addLeaf> .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#9d784dbb4810548940b76aff4a8790d6ad379bf6
+<http://doi.org/10.1610/history-iao-extracted#9d784dbb4810548940b76aff4a8790d6ad379bf6> rdf:type owl:NamedIndividual ,
+                                                                                                 prov:Entity ;
+                                                                                        prov:alternateOf :OpenEnergyPlatform_ontology_master_src_ontology_imports_iao-extracted ;
+                                                                                        prov:hadPrimarySource <http://doi.org/10.1610/history-iao-extracted#9d784dbb4810548940b76aff4a8790d6ad379bf6_iao-extracted> ;
+                                                                                        prov:wasRevisionOf <http://doi.org/10.1610/history-iao-extracted#42c6448efab195d6e354b00ca0db71fa8910c0a8> ;
+                                                                                        prov:generatedAtTime "2023-11-30T10:58:44.000Z"^^xsd:dateTime ;
+                                                                                        prov:value "update iao-extracted with journal article imported without hierarchy" ;
+                                                                                        rdfs:comment "updated iao-extracted with journal article imported without hierarchy" ;
+                                                                                        rdfs:label "9d784dbb4810548940b76aff4a8790d6ad379bf6" ;
+                                                                                        rdfs:seeAlso <https://github.com/OpenEnergyPlatform/ontology/commit/9d784dbb4810548940b76aff4a8790d6ad379bf6> .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#9d784dbb4810548940b76aff4a8790d6ad379bf6_iao-extracted
+<http://doi.org/10.1610/history-iao-extracted#9d784dbb4810548940b76aff4a8790d6ad379bf6_iao-extracted> rdf:type owl:NamedIndividual ,
+                                                                                                               prov:Entity ;
+                                                                                                      rdfs:comment "Update iao-extracted with journal article imported without hierarchy" ;
+                                                                                                      rdfs:label "9d784dbb4810548940b76aff4a8790d6ad379bf6_iao-extracted" ;
+                                                                                                      prov:dm <https://raw.githubusercontent.com/OpenEnergyPlatform/ontology/9d784dbb4810548940b76aff4a8790d6ad379bf6/src/ontology/imports/iao-extracted.owl> .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
