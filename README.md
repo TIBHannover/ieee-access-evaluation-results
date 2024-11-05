@@ -1,3 +1,5 @@
-# OnDeT Evaluation results
+# OnDeT evaluation results
 
-This repository contains data that are output of the OnDeT tool evaluation
+## OnDeT KG evaluation 
+
+## OnDeT tool evaluation 
