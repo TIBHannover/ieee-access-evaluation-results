@@ -1,0 +1,26 @@
+#Execute this SPARQL query against the following OnDeT SPARQL endpoint: http://ols4ing21.service.tib.eu:3030/#/dataset/test/query
+#Competency question CQ 2.3: What changes have been made to axiom A between commit X and commit Y ?
+PREFIX pro: <http://purl.org/hpi/patchr#>
+PREFIX pr: <http://purl.org/ontology/prv/core#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT ?x_commit_title ?y_commit_title ?s ?p ?o
+WHERE {
+?x prov:wasRevisionOf ?y .
+?x prov:generatedAtTime ?x_time .
+?x prov:value ?x_commit_title .
+?x prov:alternateOf ?alternate_of_first_commit .
+?alternate_of_first_commit rdfs:seeAlso <https://raw.githubusercontent.com/nenadkrdzavac/iao-ontology/dev/src/ontology/imports/iao-extracted-swj.owl> .
+?x prov:value ?y_commit_title .
+?y prov:alternateOf ?alternate_of_second_commit .
+?alternate_of_second_commit rdfs:seeAlso  <https://raw.githubusercontent.com/nenadkrdzavac/iao-ontology/dev/src/ontology/imports/iao-extracted-swj.owl> .
+?operation ?change ?x .
+?change rdfs:subPropertyOf ?property .
+?operation prov:atLocation ?location .
+?location prov:dm ?diff .
+GRAPH ?diff {
+?s ?p ?o .
+}
+}
