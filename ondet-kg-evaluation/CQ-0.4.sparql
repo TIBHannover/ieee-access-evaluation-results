@@ -1,0 +1,22 @@
+#Execute this SPARQL query  against the following OnDeT SPARQL endpoint: http://ols4ing21.service.tib.eu:3030/#/dataset/test/query
+#Competency question CQ 0.4: Can we get type of relation that has been changed across all versions of all ontologies, emcompassing all commits that were revisions of some other commits generated at a time?
+PREFIX pro: <http://purl.org/hpi/patchr#>
+PREFIX pr: <http://purl.org/ontology/prv/core#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT ?subject
+WHERE {
+?first_commit prov:wasRevisionOf ?second_commit .
+?first_commit prov:value ?first_commit_title .
+?second_commit prov:value ?second_commit_name .
+?operation ?changes ?first_commit .
+?pp rdfs:subPropertyOf ?property .
+?pp rdfs:label ?pp_label .
+?operation prov:atLocation ?location .
+?location prov:dm ?diff .
+GRAPH ?diff {
+?subject ?relation ?object .
+}
+}
