@@ -1,0 +1,22 @@
+#Execute this SPARQL query  against the following OnDeT SPARQL endpoint: http://ols4ing21.service.tib.eu:3030/#/dataset/test/query
+#Competency question CQ 1.1: What is the total number of all changes?
+PREFIX pro: <http://purl.org/hpi/patchr#>
+PREFIX pr: <http://purl.org/ontology/prv/core#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT (COUNT(?diff) AS ?total)
+WHERE {
+?first_commit prov:wasRevisionOf ?second_commit .
+?first_commit prov:alternateOf ?alternate_of_first_commit .
+?alternate_of_first_commit rdfs:seeAlso ?ontology_raw_file_url .
+FILTER(str(?ontology_raw_file_url) = 'https://raw.githubusercontent.com/nenadkrdzavac/iao-ontology/dev/src/ontology/imports/iao-extracted-swj.owl').
+?operation ?pp ?first_commit .
+?pp rdfs:subPropertyOf ?property .
+?operation prov:atLocation ?location .
+?location prov:dm ?diff .
+GRAPH ?diff {
+?s ?p ?o .
+}
+}

@@ -1,0 +1,26 @@
+#Execute this SPARQL query  against the following OnDeT SPARQL endpoint: http://ols4ing21.service.tib.eu:3030/#/dataset/test/query
+#SPARQL query that finds differences between two versions of the IA ontology (see graph shown in Figure 4) 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT *
+WHERE {
+?n2 <http://www.w3.org/ns/prov#atLocation> ?n1 .
+?n1 rdf:type ?location .
+?n1 <http://www.w3.org/ns/prov#dm> ?n11 .
+?n2 <http://www.w3.org/ns/prov#wasAssociatedWith> ?n5 .
+?n2 rdf:type ?activity .
+?n5 <http://www.w3.org/ns/prov#dm> ?n8 .
+?n5 rdf:type ?softwareAgent .
+?n2 <http://www.w3.org/ns/prov#addConcept> ?n3 .
+?n3 rdf:type ?entity .
+?n3 <http://www.w3.org/ns/prov#generatedAtTime> ?n3_time .
+?n3 <http://www.w3.org/ns/prov#wasRevisionOf> ?n4 .
+?n4 <http://www.w3.org/ns/prov#generatedAtTime> ?n4_time .
+?n3 <http://www.w3.org/ns/prov#hadPrimarySource> ?n6 .
+?n6 <http://www.w3.org/ns/prov#dm> ?n9 .
+?n6 rdf:type ?entity .
+?n4 <http://www.w3.org/ns/prov#dm> ?n12 .
+?n4 rdf:type ?entity .
+?n4 <http://www.w3.org/ns/prov#hadPrimarySource> ?n7 .
+?n7 rdf:type ?entity .
+?n7 <http://www.w3.org/ns/prov#dm> ?n10 .
+}
