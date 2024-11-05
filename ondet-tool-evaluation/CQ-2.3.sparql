@@ -21,6 +21,6 @@ WHERE {
 ?operation prov:atLocation ?location .
 ?location prov:dm ?diff .
 GRAPH ?diff {
-?s ?p ?o .
+<http://openenergy-platform.org/ontology/oeo/imports/iao-extracted.owl#IAO_00000000_1> rdfs:subClassOf owl:Thing .
 }
 }
