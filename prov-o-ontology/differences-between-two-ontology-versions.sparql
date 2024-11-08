@@ -1,5 +1,6 @@
 #Execute this SPARQL query  against the following OnDeT SPARQL endpoint: http://ols4ing21.service.tib.eu:3030/#/dataset/test/query
 #SPARQL query that finds differences between two versions of the IA ontology (see graph shown in Figure 4) 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 SELECT DISTINCT *
 WHERE {
@@ -14,6 +15,8 @@ WHERE {
 ?n3 rdf:type ?entity .
 ?n3 <http://www.w3.org/ns/prov#generatedAtTime> ?n3_time .
 ?n3 <http://www.w3.org/ns/prov#wasRevisionOf> ?n4 .
+?n3 <http://www.w3.org/ns/prov#alternateOf> ?n3_alternate .
+?n3_alternate rdfs:seeAlso <https://raw.githubusercontent.com/OpenEnergyPlatform/ontology/master/src/ontology/imports/iao-extracted.owl> . 
 ?n4 <http://www.w3.org/ns/prov#generatedAtTime> ?n4_time .
 ?n3 <http://www.w3.org/ns/prov#hadPrimarySource> ?n6 .
 ?n6 <http://www.w3.org/ns/prov#dm> ?n9 .
