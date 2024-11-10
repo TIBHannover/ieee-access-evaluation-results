@@ -8,7 +8,7 @@ Foder *prov-o-ontology* folder contains the following files:
 * **extended-prov-o.ttl**: Extended the PROV-O ontology. 
 * **all_diff.nq**: Axioms that have been changed to the [io-extracted](https://raw.githubusercontent.com/OpenEnergyPlatform/ontology/master/src/ontology/imports/iao-extracted.owl) ontology.
 * **semantic-diff-contodiff-iao-extracted.ttl**: Individual assertions that desribe differences between two versions of the [io-extracted](https://github.com/OpenEnergyPlatform/ontology/tree/dev/src/ontology/imports) ontology hosted in a GitHub repository. These difference are detected by the [COnto-Diff](https://github.com/dbs-leipzig/conto_diff) tool.
-* **differences-between-two-ontology-versions.sprql**: A SPARQL query that can be executed agains OnDeT [SPARQL endpoint](http://ols4ing21.service.tib.eu:3030/#/dataset/test/query). 
+* **differences-between-two-ontology-versions.sprql**: A SPARQL query that can be executed against OnDeT [SPARQL endpoint](http://ols4ing21.service.tib.eu:3030/#/dataset/test/query). Otherwise, please load aformetioned TTL and NQ files into your triple store and execute this query.
 * **differences-between-two-ontology-versions-query-rsults.cvs**: The reult of the previous SPARQL query. 
 
 ## ONDET KG EVALUATION 
