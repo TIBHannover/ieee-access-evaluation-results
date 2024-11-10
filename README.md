@@ -6,8 +6,8 @@ This is repository that contains data used in the evaluation of the [OnDeT](http
 Foder *prov-o-ontology* folder contains the following files:
 
 * extended-prov-o.ttl: Extended the PROV-O ontology. 
-* all_diff.nq: Change operations have been made on the [io-extracted](https://raw.githubusercontent.com/OpenEnergyPlatform/ontology/master/src/ontology/imports/iao-extracted.owl) that are detected by the COnto-Diff tool.
-* Individual assertions for semantic differences between two versions of the [io-extracted](https://github.com/OpenEnergyPlatform/ontology/tree/dev/src/ontology/imports) ontology hosted on a GitHub repository.
+* all_diff.nq: Change operations have been made to the [io-extracted](https://raw.githubusercontent.com/OpenEnergyPlatform/ontology/master/src/ontology/imports/iao-extracted.owl) that are detected by the COnto-Diff tool.
+* Individual assertions for semantic differences between two versions of the [io-extracted](https://github.com/OpenEnergyPlatform/ontology/tree/dev/src/ontology/imports) ontology hosted in a GitHub repository.
 * differences-between-two-ontology-versions.sprql: A SPARQL query that can be executed agains a SPARQL endpoint after loading the the aforementioned ontologies.
 * differences-between-two-ontology-versions-query-rsults.cvs: The reult of the SPARQL query. 
 
