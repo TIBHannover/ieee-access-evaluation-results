@@ -13,7 +13,7 @@ Foder *prov-o-ontology* folder contains the following files:
 
 ## ONDET KG EVALUATION 
 
-The *ondet-kg-evaluation* folder contains SPARQL queries and thier results that are used in the OnDeT KG evaluation. Each SPARQL query in this folder is realted to a competency question used in the *ONDET KG EVALUATION* section. 
+The *ondet-kg-evaluation* folder contains SPARQL queries and thier results that are used in the OnDeT KG evaluation. Each SPARQL query in this folder is related to a competency question used in the *ONDET KG EVALUATION* section. 
 
 ## THE EVALUATION OF THE ONDET TOOL 
 The *ondet-tool-evaluation* folder contains the SPARQL queries and their results that are used in the OnDeT tool evaluation. Each SPARQL query in this folder is related to a competency question used in the *THE EVALUATION OF THE ONDET TOOL* section. 
