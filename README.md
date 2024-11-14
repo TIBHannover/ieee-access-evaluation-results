@@ -5,11 +5,11 @@ This is repository that contains data used in the evaluation of the [OnDeT](http
 ## Table of Contents
 
 1. [Experiments](#experiments)
-   1.1 [PROV-O Ontology Evaluation](#prov-o-ontology-evaluation) 
-   1.2 [OnDeT KG Evaluation](#ondet-kg-evaluation)
-   1.3 [The Evaluation Of The OnDeT Tool](#the-evaluation-of-the-ondet-tool)
-   1.4 [How to reproduce](#how-to-reproduce)
-   1.5 [Q&A](#qa)
+2. [PROV-O Ontology Evaluation](#prov-o-ontology-evaluation) 
+3. [OnDeT KG Evaluation](#ondet-kg-evaluation)
+4. [The Evaluation Of The OnDeT Tool](#the-evaluation-of-the-ondet-tool)
+5. [How to reproduce](#how-to-reproduce)
+6. [Q&A](#qa)
    
 ## Experiments
 
