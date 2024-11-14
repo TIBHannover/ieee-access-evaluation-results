@@ -1,6 +1,6 @@
 # OnDeT Tool Evaluation for IEEE Access
 
-This is repository that contains data used in the evaluation of the [OnDeT](https://service.tib.eu/vdp/sandbox/ondet) tool. All queries are executed against OnDeT [SPARQL endpoint](http://ols4ing21.service.tib.eu:3030/#/dataset/test/query). If the SPARQL endpoint is not accessible for any reason, please load all data located in the *prov-o-ontology* folder into your own triple store. 
+This repository contains data used in the evaluation of the [OnDeT](https://service.tib.eu/vdp/sandbox/ondet) tool. All queries are executed against OnDeT [SPARQL endpoint](http://ols4ing21.service.tib.eu:3030/#/dataset/test/query).  
 
 ## Table of Contents
 
@@ -19,7 +19,7 @@ This is repository that contains data used in the evaluation of the [OnDeT](http
 
 Foder *prov-o-ontology* folder contains the following files:
 
-* **extended-prov-o.ttl**: Extended the PROV-O ontology. 
+* **extended-prov-o.ttl**: Extended the [PROV-O](https://www.w3.org/TR/prov-o/) ontology. 
 * **all_diff.nq**: Axioms that have been changed to the [io-extracted](https://raw.githubusercontent.com/OpenEnergyPlatform/ontology/master/src/ontology/imports/iao-extracted.owl) ontology.
 * **semantic-diff-contodiff-iao-extracted.ttl**: Individual assertions that desribe differences between two versions of the [io-extracted](https://github.com/OpenEnergyPlatform/ontology/tree/dev/src/ontology/imports) ontology hosted in a GitHub repository. These difference are detected by the [COnto-Diff](https://github.com/dbs-leipzig/conto_diff) tool.
 * **differences-between-two-ontology-versions.sprql**: A SPARQL query that can be executed against OnDeT [SPARQL endpoint](http://ols4ing21.service.tib.eu:3030/#/dataset/test/query). Otherwise, please load the aforementioned  TTL and NQ files into your triple store and run this query.
@@ -39,3 +39,6 @@ The *ondet-tool-evaluation* folder contains the SPARQL queries and their results
 
 ## Q&A
 
+>Q: OnDeT [SPARQL endpoint](http://ols4ing21.service.tib.eu:3030/#/dataset/test/query) is not accessible or requires user name and password.
+
+>A: If the OnDeT [SPARQL endpoint](http://ols4ing21.service.tib.eu:3030/#/dataset/test/query) is not accessible for any reason, please load all data located in the *prov-o-ontology* folder into your own triple store. 
