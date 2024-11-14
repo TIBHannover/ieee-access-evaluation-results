@@ -15,7 +15,7 @@ This is repository that contains data used in the evaluation of the [OnDeT](http
 
 
 
-### PROV-O Ontology Evaluation
+## PROV-O Ontology Evaluation
 
 Foder *prov-o-ontology* folder contains the following files:
 
@@ -25,13 +25,13 @@ Foder *prov-o-ontology* folder contains the following files:
 * **differences-between-two-ontology-versions.sprql**: A SPARQL query that can be executed against OnDeT [SPARQL endpoint](http://ols4ing21.service.tib.eu:3030/#/dataset/test/query). Otherwise, please load the aforementioned  TTL and NQ files into your triple store and run this query.
 * **differences-between-two-ontology-versions-query-rsults.cvs**: The reult of the previous SPARQL query. 
 
-### OnDeT KG Evaluation 
+## OnDeT KG Evaluation 
 
 The *ondet-kg-evaluation* folder contains SPARQL queries and thier results that are used in the OnDeT KG evaluation. Each SPARQL query in this folder is related to a competency question used in the *ONDET KG EVALUATION* section. 
 
 
 
-### The Evaluation Of The OnDeT Tool 
+## The Evaluation Of The OnDeT Tool 
 
 The *ondet-tool-evaluation* folder contains the SPARQL queries and their results that are used in the OnDeT tool evaluation. Each SPARQL query in this folder is related to a competency question used in the *THE EVALUATION OF THE ONDET TOOL* section. 
 
