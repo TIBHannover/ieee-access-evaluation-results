@@ -2,13 +2,15 @@
 
 This is repository that contains data used in the evaluation of the [OnDeT](https://service.tib.eu/vdp/sandbox/ondet) tool. All queries are executed against OnDeT [SPARQL endpoint](http://ols4ing21.service.tib.eu:3030/#/dataset/test/query). If the SPARQL endpoint is not accessible for any reason, please load all data located in the *prov-o-ontology* folder into your own triple store. 
 
-##Table of Contents
+## Table of Contents
 
 1. [Experiments](#experiments)
    1.1 [PROV-O Ontology Evaluation](#prov-o-ontology-evaluation) 
    1.2 [OnDeT KG Evaluation](#ondet-kg-evaluation)
    1.3 [The Evaluation Of The OnDeT Tool](#the-evaluation-of-the-ondet-tool)
-
+   1.4 [How to reproduce](#how-to-reproduce)
+   1.5 [Q&A](#qa)
+   
 ## Experiments
 
 
@@ -32,4 +34,8 @@ The *ondet-kg-evaluation* folder contains SPARQL queries and thier results that 
 ### The Evaluation Of The OnDeT Tool 
 
 The *ondet-tool-evaluation* folder contains the SPARQL queries and their results that are used in the OnDeT tool evaluation. Each SPARQL query in this folder is related to a competency question used in the *THE EVALUATION OF THE ONDET TOOL* section. 
+
+## How to reproduce
+
+## Q&A
 
