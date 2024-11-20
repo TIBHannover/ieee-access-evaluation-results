@@ -35,7 +35,6 @@ The *ondet-kg-evaluation* folder contains SPARQL queries and thier results that 
 
 The *ondet-tool-evaluation* folder contains the SPARQL queries and their results that are used in the OnDeT tool evaluation. Each SPARQL query in this folder is related to a competency question used in the *THE EVALUATION OF THE ONDET TOOL* section. 
 
-## How to reproduce
 
 ## Q&A
 
